@@ -1,5 +1,14 @@
 'use strict';
 
+/**
+ * Обчислює кількість років, через які (або скільки років тому)
+ * батько буде (або був) удвічі старший за сина.
+ *
+ * @param {number} ageFather - Вік батька
+ * @param {number} ageSon - Вік сина
+ * @returns {number} Кількість років
+ */
+
 function fatherOlder(ageFather, ageSon) {
     if (ageFather < 0 || ageSon < 0 || (ageFather - ageSon) < 15) {
         return NaN;
