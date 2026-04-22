@@ -33,7 +33,7 @@ if (yearsAbs % 100 >= 11 && yearsAbs % 100 <= 14) {
 }
 
 if (Number.isNaN(years)) {
-    console.log(NaN);
+    console.log('Введені некоректні дані');
 } else if (years > 0) {
     console.log(`Батько буде вдвічі старший за сина через ${years} ${yearsStr}`);
 } else if (years < 0) {
