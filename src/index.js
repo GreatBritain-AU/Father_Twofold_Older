@@ -42,11 +42,11 @@ if (yearsAbs % 100 >= 11 && yearsAbs % 100 <= 14) {
 }
 
 if (Number.isNaN(years)) {
-    console.log('Введені некоректні дані');
+    console.log(NaN);
 } else if (years > 0) {
-    console.log(`Батько буде вдвічі старший за сина через ${years} ${yearsStr}`);
+    console.log(`Батько буде удвічі старший за сина через ${years} ${yearsStr}`);
 } else if (years < 0) {
-    console.log(`Батько був вдвічі старший за сина ${yearsAbs} ${yearsStr} тому`);
+    console.log(`Батько був удвічі старший за сина ${yearsAbs} ${yearsStr} тому`);
 } else {
-    console.log('Батько вже вдвічі старший за сина');
+    console.log('Батько вже удвічі старший за сина');
 }
