@@ -16,8 +16,8 @@ function fatherOlder(ageFather, ageSon) {
     return 2 * ageSon - ageFather;
 }
 
-const ageFather = 61;
-const ageSon = 30;
+const ageFather = 65;
+const ageSon = 33;
 
 const years = fatherOlder(ageFather, ageSon);
 const yearsAbs = Math.abs(years);
@@ -44,9 +44,9 @@ if (yearsAbs % 100 >= 11 && yearsAbs % 100 <= 14) {
 if (Number.isNaN(years)) {
     console.log(NaN);
 } else if (years > 0) {
-    console.log(`Батько буде удвічі старший за сина через ${years} ${yearsStr}`);
+    console.log(`Батько був удвічі старший за сина ${years} ${yearsStr} тому`);
 } else if (years < 0) {
-    console.log(`Батько був удвічі старший за сина ${yearsAbs} ${yearsStr} тому`);
+    console.log(`Батько буде удвічі старший за сина через ${yearsAbs} ${yearsStr}`);
 } else {
     console.log('Батько вже удвічі старший за сина');
 }
